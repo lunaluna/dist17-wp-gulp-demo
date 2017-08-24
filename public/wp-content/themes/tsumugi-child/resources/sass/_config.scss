@@ -1,0 +1,40 @@
+// variable definition
+
+$text-color       : #333;
+$font-size        : 16px;
+
+@font-face {
+	font-family: 'YuGothic M';
+	src: local('Yu Gothic Medium');
+}
+
+@font-face {
+	font-family: 'YuMincho M';
+	src: local('Yu Mincho Medium');
+}
+
+$font-family      : '游ゴシック体', YuGothic, 'YuGothic M', '游ゴシック', 'Yu Gothic', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;;
+$serif            : '游明朝体', YuMincho, 'YuMincho M', '游明朝', 'Yu Mincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+$line-height      : 1.616;
+
+$midblue          : #014099;
+$darkblue         : #1e2541;
+$lightgreen       : #41a62a;
+$lightgray        : #cfcfcf;
+
+$key-color        : $midblue;
+$main-color       : $darkblue;
+$link-color       : $darkblue;
+$active-color     : $lightgreen;
+$hover-color      : $lightgreen;
+$bg-color         : #fff;
+$wrapper-color    : #fff;
+$border-color     : $lightgray;
+$menu-color       : $midblue;
+
+$image-path       : "./images/";
+
+$sp-width         : 768px; // スマホのブレイクポイント
+$tb-width         : 992px; // タブレットのブレイクポイント
+$content-width    : 1200px; // メインコンテンツの最大幅
+$max-width        : 1500px; // デザイン上の最大幅

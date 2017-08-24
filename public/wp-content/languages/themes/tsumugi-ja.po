@@ -1,0 +1,167 @@
+# Translation of Themes - tsumugi in Japanese
+# This file is distributed under the same license as the Themes - tsumugi package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-26 01:35:54+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Themes - tsumugi\n"
+
+#. Theme Name of the plugin/theme
+msgid "tsumugi"
+msgstr "tsumugi"
+
+#. Description of the plugin/theme
+msgid "tsumugi is a simple blog theme based on _s and Bootstrap. It consists of a single column layout which is suitable for mobile devices and tablets along with PCs. For it's readability and simplicity, this theme is user-friendly for everyone. (The name of \"tsumugi\" is inspired by the song of \"Hatsune\", a Japanese singer.)"
+msgstr "tsumugi は、_s と Bootstrap をベースにしたシンプルなブログ用テーマです。レスポンシブに対応したワンカラム・レイアウトで作られているので、PC だけでなく、スマートフォンやタブレットでも最適に表示されます。読みやすさと、シンプルさを重視しているので、誰にでも使いやすいのが特徴です。(\"tsumugi\" というネーミングは、シンガーソングライター・初音の曲名から名付けさせていただきました。)"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "お探しのページが見つかりません。"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "ここには何も見つかりませんでした。以下のリンクまたは検索をお試しください。"
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "「%2$s」への%1$s件のフィードバック"
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "以前のコメント"
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "新しいコメント"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: functions.php:47
+msgid "Primary"
+msgstr "メイン"
+
+#: functions.php:110
+msgid "Sidebar"
+msgstr "サイドバー"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:64
+msgid "Leave a comment"
+msgstr "コメントを残す"
+
+#: inc/template-tags.php:64
+msgid "1 Comment"
+msgstr "1件のコメント"
+
+#: inc/template-tags.php:64
+msgid "% Comments"
+msgstr "%件のコメント"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:71 template-parts/content-page.php:33
+msgid "Edit %s"
+msgstr "編集 %s"
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr "検索結果: %s"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "何も見つかりませんでした"
+
+#: template-parts/content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "最初の記事を投稿する準備はできましたか？ <a href=\"%1$s\">ここから始めましょう</a>。"
+
+#: template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "あなたが検索した単語に一致するものが見つかりませんでした。キーワードを変えて再度検索してください。"
+
+#: template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "お探しのコンテンツが見つかりません。検索をお試しください。"
+
+#: template-parts/content-page.php:22 template-parts/content.php:38
+msgid "Pages:"
+msgstr "ページ:"
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:33
+msgid "Continue reading %s <span class=\"meta-nav\">&gt;</span>"
+msgstr "続きを読む %s <span class=\"meta-nav\">&gt;</span>"
+
+#: inc/template-tags.php:52 inc/template-tags.php:58
+msgid "%1$s"
+msgstr "%1$s"
+
+#: inc/template-tags.php:33
+msgctxt "post author"
+msgid "%s"
+msgstr "%s"
+
+#: inc/template-tags.php:28
+msgctxt "post date"
+msgid "%s"
+msgstr "%s"
+
+#: footer.php:21
+msgid "https://wordpress.org/"
+msgstr "https://ja.wordpress.org/"
+
+#: footer.php:23
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: footer.php:21
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#. translators: If there are characters in your language that are not supported
+#. by Source Sans Pro, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:136
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr "on"
+
+#. translators: If there are characters in your language that are not supported
+#. by Annie Use Your Telescope, translate this to 'off'. Do not translate into
+#. your own language.
+#: functions.php:132
+msgctxt "Annie Use Your Telescope font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Theme URI of the plugin/theme
+msgid "http://littlebirdjp.github.io/tsumugi/"
+msgstr "http://littlebirdjp.github.io/tsumugi/ja/"
+
+#. Author URI of the plugin/theme
+msgid "http://littlebird.mobi/"
+msgstr "http://littlebird.mobi/"
+
+#. Author of the plugin/theme
+msgid "youthkee"
+msgstr "youthkee"

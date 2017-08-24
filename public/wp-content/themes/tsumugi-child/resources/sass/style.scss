@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+/*!
+ Theme Name:   Tsumugi Child
+ Theme URI:    http://lunalunadesign.com/tsumugi-child/
+ Description:  Tsumugi Child Theme
+ Author:       Hiroki Saiki
+ Author URI:   http://lunalunadesign.com
+ Template:     tsumugi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  tsumugi-child
+*/
+
+@import 'mixin';
+@import 'config';
+@import 'sitesetting';
+@import 'common';
+@import 'pagestyle';

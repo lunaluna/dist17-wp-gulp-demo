@@ -1,0 +1,282 @@
+/*************************************/
+
+.main-title {
+}
+
+.sub-title {
+}
+
+.third-title {
+}
+
+.base-list {
+}
+
+.base-table {
+}
+
+.base-btn {
+}
+
+/*layout************************************/
+body {
+	position: relative;
+}
+
+
+/*header************************************/
+
+
+
+/* gnavi *************************************/
+.navbar {
+	margin-bottom: 0;
+	@include media(m) {
+		border: none;
+		border-radius: 0;
+	}
+}
+
+.navbar-default {
+	background: $bg-color;
+	.navbar-toggle {
+		background-color: $bg-color;
+		&:focus,
+		&:hover {
+			background-color: $bg-color;
+		}
+	}
+	&.fixed {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		padding: 5px 15px;
+		z-index: 1030;
+		box-shadow: 0 9px 3px -3px rgba(128,128,128,.1);
+		.navbar-header {
+			padding-top: 0;
+			float: left;
+			text-align: left;
+		}
+		.navbar-brand {
+			float: left;
+			display: block;
+			text-align: left;
+			padding: 0;
+			margin: 0 20px 0 0;
+		}
+		.navbar-collapse {
+			float: left;
+			width: calc(100% - 260px);
+			&.collapse {
+				padding-bottom: 0;
+			}
+		}
+		.navbar-nav {
+			float: left;
+			display: block;
+			text-align: left;
+			margin: 0;
+			li {
+				float: left;
+				display: block;
+				width: auto;
+				margin-right: 2.5%;
+				a {
+					display: block;
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+.navbar-fixed-top {
+	.navbar-collapse {
+		max-height: calc(85vh - 65px); // 65px : ヘッダの高さ
+	}
+}
+
+.navbar-toggle {
+	line-height: 1.2;
+	padding: 0 6px 6px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	z-index: 2;
+	.navbtn-text {
+		@include fontsize(10px);
+		color: #888;
+		line-height: 1;
+	}
+	.icon-bar {
+		position: relative;
+		width: 30px;
+		margin-top: 2px;
+		border-radius: 3px;
+		transition: .3s ease-in-out;
+		+ .icon-bar {
+			margin-top: 5px;
+		}
+		&:nth-child(2) {
+			top: 7px;
+			transform: rotate(30deg);
+		}
+		&:nth-child(3) {
+			opacity: 0;
+		}
+		&:nth-child(4) {
+			top: -7px;
+			transform: rotate(-30deg);
+		}
+	}
+	&.collapsed {
+		.icon-bar {
+			&:nth-child(2) {
+				top: 0;
+				transform: rotate(0deg);
+			}
+			&:nth-child(3) {
+				opacity: 1;
+			}
+			&:nth-child(4) {
+				top: 0;
+				transform: rotate(0deg);
+			}
+		}
+	}
+}
+
+.navbar-brand {
+	height: 54px;
+	padding: 14px 10px;
+}
+
+.navbar-nav {
+	li {
+		+ li {
+			border-top: 1px dotted $text-color;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+@include media(m) {
+	.navbar-header {
+		padding-top: 10px;
+		float: none;
+		text-align: center;
+	}
+	.navbar-brand {
+		width: 240px;
+		height: auto;
+		float: none;
+		display: inline-block;
+		text-align: center;
+		padding: 20px 10px 10px;
+		margin: 0 auto;
+		.logo {
+			@include fluidimage;
+		}
+	}
+	.navbar-collapse {
+		float: none;
+		&.collapse {
+			padding-bottom: 2px;
+		}
+	}
+	.navbar-nav {
+		width: 100%;
+		max-width: $max-width;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		li {
+			width: calc(20% - 6px); // メニューの数で変動
+			float: none;
+			display: inline-block;
+			text-align: center;
+			+ li {
+				border-top: none;
+			}
+			a {
+				position: relative;
+				display: inline-block;
+				width: 115px; // メニューの数で変動
+				@include fontsize(13px);
+				padding: 15px 0;
+				&:hover {}
+			}
+		}
+	}
+}
+
+.logo {}
+
+
+/* main ***************************************/
+.fix-head {
+	padding-top: 140px; // ヘッダの高さで変動
+}
+
+.main {
+	position: relative;
+	background: $bg-color;
+	margin-top: calc(780 / 640 * 100% + 54px); // ヘッダの高さで変動
+	&.progress {
+		margin-top: 54px;
+	}
+	.main-image,
+	.pagetitlearea {
+		position: fixed;
+		left: 0;
+		display: block;
+		width: 100%;
+		z-index: -1;
+		img {
+			@include fluidimage;
+		}
+	}
+	// &.single {
+	// 	margin-top: calc(640 / 640 * 100% + 54px);
+	// }
+	.main-image {
+		top: 54px; // ヘッダの高さで変動
+	}
+	.pagetitlearea {
+		top: 80px;
+	}
+	@include media(m) {
+		margin-top: 0;
+		&.single,
+		&.progress {
+			margin-top: 0;
+		}
+		.main-image,
+		.pagetitlearea {
+			width: calc(100% + 30px);
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+		.main-image {
+			position: static;
+			margin-bottom: 70px;
+		}
+		.pagetitlearea {
+			position: relative;
+			top: 0;
+			margin-bottom: 0;
+			z-index: 1;
+		}
+	}
+}
+
+
+
+/*footer************************************/
+
+
+/*breadcrumb************************************/

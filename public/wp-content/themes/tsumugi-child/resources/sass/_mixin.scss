@@ -1,0 +1,49 @@
+@charset "utf-8";
+//使用する場合は@include borderBox; のように記述
+
+//clearfix 使用する場合は
+//任意のセレクタ { @include clearfix; } のように記述する
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+// レスポンシブな文字サイズ
+// $fontsize : デザイン上の文字サイズ
+// $designwidth : デザインのウィンドウ幅
+@mixin vwfont( $fontsize, $designwidth:768px ) {
+	font-size: ( $fontsize / $designwidth ) * 100vw;
+}
+
+// レスポンシブな画像のサイズ指定
+@mixin fluidimage {
+	width: 100%;
+	height: auto;
+}
+
+// 画像最大サイズまでレスポンシブな画像指定
+@mixin contentimage {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+// 上下左右中央レイアウト
+@mixin center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* font-size
+************************************/
+// $size : 文字サイズ
+// $font-size : サイトのbodyに指定した文字サイズ
+@mixin fontsize($size: $font-size) {
+	font-size: ($size / 16px) * 1rem;
+}
